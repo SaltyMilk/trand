@@ -7,7 +7,7 @@ void *thread(void *ma)
 	static pthread_mutex_t mutex;
 	pthread_mutex_t *m = &mutex;
 	int r;
-	for (unsigned long long i = 0; i < *(unsigned long long*)ma; i++)
+	for (unsigned long long i = 0; i < *(unsigned long long*)ma + 1; i++)
 		r  = rand();
 	pthread_mutex_lock((pthread_mutex_t *)m);
 	if (g_rfound == -1)
