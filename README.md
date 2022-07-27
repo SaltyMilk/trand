@@ -1,4 +1,4 @@
-Trand is more secure alternative to rand
+Trand is a more secure alternative to rand.
 
 To compile: gcc your.c -L path_to_libtrand.a -ltrand
 
